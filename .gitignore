@@ -9,5 +9,6 @@ wheels/
 # venv
 .venv
 
+index
 
 src/semanticsilm/persist

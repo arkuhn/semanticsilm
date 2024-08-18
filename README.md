@@ -6,9 +6,9 @@ Silmarillion to generate embeddings, an index, query engine and knowledge graph.
 ```
 export OPENAI_API_KEY='...' # Warning, not cheap!
 rye sync
+. ./.venv/bin/activate
 cd src/semanticsilm
-python main.py # First run will build and save index, subsequent runs will load existing index
-python visualize.py
+python main.py
 ```
 
 ```
@@ -40,5 +40,7 @@ Melkor, originally one of the Valar, turned to evil purposes and sought dominion
 As he descended into darkness, he became a liar and a tyrant, ultimately losing his ability to change form. He sought revenge and plotted with Ungoliant in the dark region of Avathar.
 His actions led to significant turmoil and conflict, marking his legacy as the Black Enemy, later known as Morgoth. His downfall was marked by a series of battles against the Valar, culminating in his eventual defeat and imprisonment.
 ```
+
+![Full depth](./output/08_18_2024_10_32/silmarillion_graph_networkx.png)
 
 ![First knowledge graph attempt](./output/1/silmarillion_graph_networkx.png)

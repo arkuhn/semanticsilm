@@ -195,6 +195,7 @@ nest-asyncio==1.6.0
 networkx==3.3
     # via llama-index-core
     # via llama-index-legacy
+    # via python-louvain
     # via pyvis
     # via semanticsilm
 nltk==3.8.1
@@ -207,6 +208,8 @@ numpy==1.26.4
     # via llama-index-legacy
     # via matplotlib
     # via pandas
+    # via python-louvain
+    # via scipy
     # via spacy
     # via thinc
 openai==1.41.0
@@ -261,6 +264,8 @@ pypdf==4.3.1
 python-dateutil==2.9.0.post0
     # via matplotlib
     # via pandas
+python-louvain==0.16
+    # via semanticsilm
 pytz==2024.1
     # via pandas
 pyvis==0.3.2
@@ -280,6 +285,8 @@ requests==2.32.3
     # via weasel
 rich==13.7.1
     # via typer
+scipy==1.14.0
+    # via semanticsilm
 setuptools==72.2.0
     # via marisa-trie
     # via spacy

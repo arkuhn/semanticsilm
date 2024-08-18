@@ -1,6 +1,9 @@
 import re
 import os
 
+
+from semanticsilm.main import DATA_DIR, SOURCE_DIR
+
 def split_chapters(input_file, output_dir):
     # Create the output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
@@ -37,8 +40,8 @@ def split_chapters(input_file, output_dir):
         print(f"Wrote {filename}")
 
 def main():
-    input_file = "./data/source.txt"
-    output_dir = "./data"
+    input_file = f"{SOURCE_DIR}/raw.txt"
+    output_dir = DATA_DIR
     split_chapters(input_file, output_dir)
 
 if __name__ == "__main__":
